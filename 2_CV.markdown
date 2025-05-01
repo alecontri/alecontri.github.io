@@ -4,8 +4,7 @@ title: CV
 permalink: /curriculum/
 ---
 
-Curriculum Vitae
-----
+<!-- Curriculum Vitae -->
 
 Here you can download my CV: [Download PDF](assets/AlessandroContri_resume.pdf)
 

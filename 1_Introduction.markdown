@@ -4,8 +4,7 @@ title: Introduction
 permalink: /introduction/
 ---
 
-About me
-----
+<!-- About me -->
 
 Nature is what sparks my curiosity daily and mathematical algorithms are the language I have chosen to understand it. Specifically, I love generating visually striking images from PDE simulations that accurately imitate naturally occurring phenomena.
 
