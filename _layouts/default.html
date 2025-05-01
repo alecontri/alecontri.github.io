@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script> 
+
+  <script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      macros: {
+        RR: '{\\mathbb{R}}',
+        d: '{\\mathrm{d}}',
+        rank: '{\\mathrm{rank}~}',
+        span: '{\\mathrm{span}~}',
+        sym: '{\\mathrm{Sym}~}',
+        sgn: '{\\mathrm{sgn}~}',
+        i: ['{\\imath}'],
+        b: ['{\\mathbf{#1}}', 1],
+        bb: ['{\\mathbb{#1}}', 1],
+        c: ['{\\mathcal{#1}}', 1],
+        t: ['{\\tilde{#1}}', 1],
+        inn: ['{\\langle #1 ,~ #2 \\rangle}', 2],
+        norm: ['\\left\\lVert#1\\right\\rVert', 1],
+        restr: ['\\left. #1 \\right\\vert_{#2}' , 2],
+        T: ['T_{#1} #2' , 2],
+        cT: ['T^\\ast_{#1} #2' , 2],
+        TT: ['\\mathcal{T}^{#1} #2' , 2]
+      }
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
