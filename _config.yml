@@ -21,8 +21,8 @@
 title: Alessandro Contri
 email: contri.alessandro@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the website to host my personal details, 
-  a some other miscellaneous numerical mathematics
+  This is the website to share my personal details
+  and some other miscellaneous numerical
   things I have stumbled across in my life.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://alecontri.github.io" # the base hostname & protocol for your site, e.g. http://example.com
