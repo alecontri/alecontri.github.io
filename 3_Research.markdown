@@ -6,6 +6,14 @@ permalink: /research/
 
 <!-- Reserach -->
 
-<video width="640" height="360" controls>
-  <source src="assets/total.mp4" type="video/mp4">
-</video>
+CIP stabilization for ADR equations on surface
+
+![Gif 1](../assets/option0.gif){:style="width: 250px; height: auto;"}
+![Gif 2](../assets/option1.gif){:style="width: 250px; height: auto;"}
+
+Bound and mass-preservation portprocessing for ADR surface
+
+![Gif 3](../assets/option2.gif){:style="width: 250px; height: auto;"}
+![Gif 4](../assets/option3.gif){:style="width: 250px; height: auto;"}
+
+Willmore flow on realistic meshes
