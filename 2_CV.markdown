@@ -1,12 +1,13 @@
 ---
 layout: page
 title: CV
+eyebrow: Curriculum Vitae
 permalink: /curriculum/
 ---
 
-<!-- Curriculum Vitae -->
+<a class="btn btn--primary" href="{{ "/assets/AlessandroContri_resume.pdf" | relative_url }}" download>Download PDF ↓</a>
 
-Here you can download my CV: [Download PDF](assets/AlessandroContri_resume.pdf)
-
-<embed src="/assets/AlessandroContri_resume.pdf" type="application/pdf" width="100%" height="600px" />
+<div class="cv-frame">
+  <embed src="{{ "/assets/AlessandroContri_resume.pdf" | relative_url }}" type="application/pdf" />
+</div>
 

@@ -2,33 +2,43 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<section class="hero">
+  <div class="hero__mesh">
+    {%- include mesh-hero.html -%}
+  </div>
+  <div class="wrapper wrapper--wide hero__content">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">{{ site.affiliation }}</p>
+        <h1>{{ site.first_name }} {{ site.last_name }}</h1>
+        <p class="hero__role">{{ site.role }}</p>
+        <p class="hero__tagline">{{ site.tagline }}</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="{{ "/research/" | relative_url }}">Research</a>
+          <a class="btn" href="{{ "/teaching/" | relative_url }}">Teaching</a>
+          <a class="btn" href="{{ "/numalg/" | relative_url }}">NumAlg</a>
+          <a class="btn" href="{{ "/curriculum/" | relative_url }}">CV</a>
+        </div>
+      </div>
+      <div class="hero__portrait">
+        <img src="{{ "/assets/profile.png" | relative_url }}" alt="Portrait of {{ site.first_name }} {{ site.last_name }}" width="320" height="320">
+      </div>
+    </div>
+  </div>
+</section>
 
-  {{ content }}
+{%- if page.title -%}
+  <h2 class="page-heading">{{ page.title }}</h2>
+{%- endif -%}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
-</div>
+{%- assign home_content = content | strip -%}
+{%- if home_content != "" -%}
+<section class="section" id="about">
+  <div class="wrapper">
+    <div class="section__head">
+      <h2>About</h2>
+    </div>
+    {{ content }}
+  </div>
+</section>
+{%- endif -%}

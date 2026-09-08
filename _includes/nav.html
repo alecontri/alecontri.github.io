@@ -1,0 +1,29 @@
+<header class="site-header" role="banner">
+  <div class="wrapper wrapper--wide">
+    <a class="site-mark" href="{{ "/" | relative_url }}">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+        <polygon points="10,1.5 18.5,17 1.5,17" fill="none" stroke="var(--accent)" stroke-width="1.6" />
+        <circle cx="10" cy="1.5" r="1.6" fill="var(--accent)" />
+        <circle cx="18.5" cy="17" r="1.6" fill="var(--accent)" />
+        <circle cx="1.5" cy="17" r="1.6" fill="var(--accent)" />
+      </svg>
+      {{ site.title | escape }}
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <div class="site-nav__links">
+        {%- for path in site.header_pages -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <a href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} class="is-active" aria-current="page"{% endif %}>{{ my_page.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.7A8.5 8.5 0 1 1 9.3 3.5a7 7 0 0 0 11.2 11.2Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>

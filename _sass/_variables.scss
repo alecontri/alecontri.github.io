@@ -1,0 +1,62 @@
+// ---------------------------------------------------------------------------
+// Design tokens. Everything else in the stylesheet reads from these.
+// ---------------------------------------------------------------------------
+
+:root {
+  // Paper / ink — light mode
+  --bg: #faf6ee;
+  --bg-alt: #f0e9d8;
+  --card: #ffffff;
+  --ink: #1c1a17;
+  --ink-soft: #5c564c;
+  --ink-faint: #928c7f;
+  --line: rgba(28, 26, 23, 0.12);
+  --accent: #c8461c;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(200, 70, 28, 0.12);
+  --teal: #1f7a6c;
+  --shadow: 0 1px 2px rgba(28, 26, 23, 0.04), 0 8px 24px -12px rgba(28, 26, 23, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15130f;
+    --bg-alt: #1e1b16;
+    --card: #1c1914;
+    --ink: #f3ede0;
+    --ink-soft: #bcb2a0;
+    --ink-faint: #857c6d;
+    --line: rgba(243, 237, 224, 0.14);
+    --accent: #ff8a5b;
+    --accent-ink: #1c1400;
+    --accent-soft: rgba(255, 138, 91, 0.16);
+    --teal: #5fc3b3;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #15130f;
+  --bg-alt: #1e1b16;
+  --card: #1c1914;
+  --ink: #f3ede0;
+  --ink-soft: #bcb2a0;
+  --ink-faint: #857c6d;
+  --line: rgba(243, 237, 224, 0.14);
+  --accent: #ff8a5b;
+  --accent-ink: #1c1400;
+  --accent-soft: rgba(255, 138, 91, 0.16);
+  --teal: #5fc3b3;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.6);
+}
+
+:root {
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --content-width: 46rem;
+  --wide-width: 64rem;
+  --radius: 14px;
+  --radius-sm: 8px;
+}

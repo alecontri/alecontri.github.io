@@ -1,55 +1,41 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# These are used throughout the templates via {{ site.title }}, {{ site.email }}, etc.
 
 title: Alessandro Contri
+first_name: Alessandro
+last_name: Contri
+role: PhD Candidate in Computational Mathematics
+affiliation: NTNU — Norwegian University of Science and Technology
+tagline: >-
+  I build finite element methods for fluid-deformable surfaces —
+  and try to make PDEs look as good as they behave.
 email: contri.alessandro@icloud.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This is the website to share my personal details
-  and some other miscellaneous numerical
-  things I have stumbled across in my life.
+description: >-
+  Personal website of Alessandro Contri, PhD candidate in computational
+  mathematics working on finite element methods, surface PDEs and
+  fluid-deformable membranes.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://alecontri.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  alecontri
+url: "https://alecontri.github.io" # the base hostname & protocol for your site
+github_username: alecontri
+linkedin_username: alessandro-contri-099460175
 
 # Build settings
-theme: minima
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# Controls the order and contents of the top navigation.
+# Each entry is the filename (relative to the site root) of a page.
+header_pages:
+  - 3_Research.markdown
+  - 6_Teaching.markdown
+  - 5_NumAlg.markdown
+  - 2_CV.markdown
 
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs

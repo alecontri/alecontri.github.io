@@ -1,0 +1,41 @@
+// ---------------------------------------------------------------------------
+// Rouge syntax highlighting, mapped onto the site's own palette
+// ---------------------------------------------------------------------------
+
+.highlighter-rouge {
+  margin: 1.5em 0;
+}
+.highlighter-rouge .highlight {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+.highlight pre {
+  background: none;
+  border: none;
+  margin: 0;
+}
+.highlight table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.highlight table td { padding: 0; }
+.highlight table pre { margin: 0; }
+.highlight .gutter, .highlight .lineno {
+  color: var(--ink-faint);
+  padding-right: 1em;
+  user-select: none;
+}
+
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs, .highlight .cp { color: var(--ink-faint); font-style: italic; }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .ow { color: var(--accent); font-weight: 600; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss { color: var(--teal); }
+.highlight .n, .highlight .na, .highlight .nb, .highlight .nx, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .bp { color: var(--ink); }
+.highlight .nc, .highlight .nf, .highlight .nn, .highlight .nd { color: var(--ink); font-weight: 600; }
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: var(--accent); }
+.highlight .o { color: var(--ink-soft); }
+.highlight .p { color: var(--ink-soft); }
+.highlight .err { color: var(--ink); background: none; }
+.highlight .gh, .highlight .gu { color: var(--ink-faint); }
+.highlight .gd { color: #c0362c; }
+.highlight .gi { color: var(--teal); }

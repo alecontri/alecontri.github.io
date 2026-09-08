@@ -1,35 +1,36 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="site-footer">
+  <div class="wrapper wrapper--wide">
+    <p class="footer-meta">
+      &copy; {{ site.time | date: '%Y' }} {{ site.title | escape }} · built with a mesh, not a template
+    </p>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
+    <ul class="social-list">
+      {%- if site.github_username -%}
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="me noopener" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        </a>
+      </li>
+      {%- endif -%}
+      {%- if site.linkedin_username -%}
+      <li>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank" rel="me noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M14.82 0H1.18C.53 0 0 .53 0 1.18v13.64C0 15.47.53 16 1.18 16h13.64c.65 0 1.18-.53 1.18-1.18V1.18C16 .53 15.47 0 14.82 0ZM4.75 13.4H2.4V6h2.35v7.4ZM3.57 4.98a1.36 1.36 0 1 1 0-2.72 1.36 1.36 0 0 1 0 2.72ZM13.6 13.4h-2.35V9.8c0-.86-.02-1.96-1.2-1.96-1.2 0-1.38.94-1.38 1.9v3.66H6.32V6h2.26v1.01h.03c.31-.59 1.08-1.2 2.22-1.2 2.38 0 2.82 1.56 2.82 3.6v3.99Z"/></svg>
+        </a>
+      </li>
+      {%- endif -%}
+      {%- if site.email -%}
+      <li>
+        <a href="mailto:{{ site.email }}" aria-label="Email">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1.5 4 8 9l6.5-5"/></svg>
+        </a>
+      </li>
+      {%- endif -%}
+      <li>
+        <a href="{{ "/feed.xml" | relative_url }}" aria-label="RSS feed">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="3.2" cy="12.8" r="1.2" fill="currentColor" stroke="none"/><path d="M1.5 7.2a7.3 7.3 0 0 1 7.3 7.3M1.5 2.5a12 12 0 0 1 12 12"/></svg>
+        </a>
+      </li>
+    </ul>
   </div>
-
 </footer>
