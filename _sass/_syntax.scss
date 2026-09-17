@@ -4,16 +4,34 @@
 
 .highlighter-rouge {
   margin: 1.5em 0;
+  max-width: 100%;
 }
 .highlighter-rouge .highlight {
   background: var(--bg-alt);
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
+  max-width: 100%;
+  overflow-x: auto;
+  // A visible (not overlay-hidden) scrollbar, so a long line reads as
+  // "scroll me" rather than looking like it's just been cut off.
+  scrollbar-width: thin;
+  scrollbar-color: var(--ink-faint) transparent;
+}
+.highlighter-rouge .highlight::-webkit-scrollbar {
+  height: 8px;
+}
+.highlighter-rouge .highlight::-webkit-scrollbar-track {
+  background: transparent;
+}
+.highlighter-rouge .highlight::-webkit-scrollbar-thumb {
+  background-color: var(--ink-faint);
+  border-radius: 4px;
 }
 .highlight pre {
   background: none;
   border: none;
   margin: 0;
+  overflow-x: visible; // the scroll container is `.highlight` itself now
 }
 .highlight table {
   border-collapse: collapse;

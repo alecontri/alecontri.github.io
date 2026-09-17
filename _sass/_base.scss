@@ -68,7 +68,20 @@ pre {
   background: var(--bg-alt);
   padding: 1em 1.2em;
   border-radius: var(--radius-sm);
+  max-width: 100%;
   overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ink-faint) transparent;
+}
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+pre::-webkit-scrollbar-thumb {
+  background-color: var(--ink-faint);
+  border-radius: 4px;
 }
 pre code {
   background: none;
