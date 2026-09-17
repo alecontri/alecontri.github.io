@@ -35,9 +35,9 @@ The site is a plain [Jekyll](https://jekyllrb.com) project, hosted on GitHub Pag
 ```
 _config.yml       site-wide settings: title, tagline, nav order, social links
 index.markdown    homepage (hero + "About" section)
-3_Research.markdown, 5_NumAlg.markdown, 6_Teaching.markdown, 2_CV.markdown
+3_Research.markdown, 5_RabbitHoles.markdown, 6_Teaching.markdown, 2_CV.markdown
                    the four top-level pages
-numalg_*.markdown  the individual NumAlg write-ups (linked from 5_NumAlg's cards)
+rabbitholes_*.markdown  the individual Rabbit Holes write-ups (linked from 5_RabbitHoles's cards)
 _posts/            blog posts (not linked in the nav, still live at their URL + RSS)
 _layouts/          the three page templates: default, home, page (+ post)
 _includes/         reusable snippets: nav bar, footer, mesh graphics, <head>
@@ -55,9 +55,9 @@ Open the relevant `.markdown` file and edit the text below the front matter. The
 |---|---|
 | `layout` | Almost always `page` (or `home` for the homepage, `post` for blog posts). Controls which template wraps the content. |
 | `title` | The big heading at the top of the page, and the browser-tab title. |
-| `eyebrow` | The small label above the title (e.g. "NumAlg", "What I work on"). Optional. |
+| `eyebrow` | The small label above the title (e.g. "Rabbit Holes", "What I work on"). Optional. |
 | `permalink` | The page's URL, e.g. `/research/`. Keep these stable once published — changing one breaks any links or bookmarks pointing at the old URL. |
-| `back_url` / `back_label` | Only used on the NumAlg topic pages — adds a "back to NumAlg" link at the top. Point `back_url` at the page you want to link back to. |
+| `back_url` / `back_label` | Only used on the Rabbit Holes topic pages — adds a "back to Rabbit Holes" link at the top. Point `back_url` at the page you want to link back to. |
 
 Nothing else needs to change for a text edit — save the file, and (once you `git push`) the site rebuilds itself.
 
@@ -79,46 +79,46 @@ The homepage (`index.markdown`) has two parts:
 header_pages:
   - 3_Research.markdown
   - 6_Teaching.markdown
-  - 5_NumAlg.markdown
+  - 5_RabbitHoles.markdown
   - 7_Publications.markdown   # <- new page
   - 2_CV.markdown
 ```
 
-If you *don't* add it to `header_pages`, the page still exists and is reachable by its URL (useful for the NumAlg topic pages, which are deliberately left out of the top nav and only reached via the NumAlg cards).
+If you *don't* add it to `header_pages`, the page still exists and is reachable by its URL (useful for the Rabbit Holes topic pages, which are deliberately left out of the top nav and only reached via the Rabbit Holes cards).
 
-## Adding a new NumAlg topic
+## Adding a new Rabbit Holes topic
 
-This is the "card that opens into a full write-up" pattern used by the three current NumAlg topics. It's two pieces:
+This is the "card that opens into a full write-up" pattern used by the three current Rabbit Holes topics. It's two pieces:
 
-**1. The write-up page.** Copy one of the existing `numalg_*.markdown` files (`numalg_three_body.markdown` is a good template — it has math, a table, code, an image, and a video). Give it:
+**1. The write-up page.** Copy one of the existing `rabbitholes_*.markdown` files (`rabbitholes_three_body.markdown` is a good template — it has math, a table, code, an image, and a video). Give it:
 
 ```yaml
 ---
 layout: page
 title: Your topic title
-eyebrow: NumAlg
-permalink: /numalg/your-topic-slug/
-back_url: /numalg/
-back_label: NumAlg
+eyebrow: Rabbit Holes
+permalink: /rabbit-holes/your-topic-slug/
+back_url: /rabbit-holes/
+back_label: Rabbit Holes
 ---
 ```
 
 Then write the content. Inline math uses `$...$`, display equations use `$$...$$` (see "Math" below).
 
-**2. The card.** Open `5_NumAlg.markdown` and copy one of the three `<a class="project-card">` blocks inside the `<div class="card-grid">`, then edit its `href`, image, title, description and tags to match your new page.
+**2. The card.** Open `5_RabbitHoles.markdown` and copy one of the three `<a class="project-card">` blocks inside the `<div class="card-grid">`, then edit its `href`, image, title, description and tags to match your new page.
 
 ## Embedding images and video in the text
 
-All media lives under `assets/` — general site images directly in `assets/`, NumAlg-specific media in `assets/numalg/`. Reference files with Jekyll's `relative_url` filter so links keep working regardless of where the site is hosted.
+All media lives under `assets/` — general site images directly in `assets/`, Rabbit Holes-specific media in `assets/numalg/`. Reference files with Jekyll's `relative_url` filter so links keep working regardless of where the site is hosted.
 
-**A simple inline image** (as used on the NumAlg cards):
+**A simple inline image** (as used on the Rabbit Holes cards):
 
 ```html
 <img src="{{ "/assets/numalg/your-image.svg" | relative_url }}"
      alt="Describe the image" loading="lazy">
 ```
 
-**A captioned figure in article text** (as used on the three NumAlg write-ups) — wrap it in `<figure class="figure">` so it gets the site's card-style border, shadow and caption styling:
+**A captioned figure in article text** (as used on the three Rabbit Holes write-ups) — wrap it in `<figure class="figure">` so it gets the site's card-style border, shadow and caption styling:
 
 ```html
 <figure class="figure">

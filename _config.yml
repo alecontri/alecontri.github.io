@@ -7,8 +7,8 @@ last_name: Contri
 role: PhD Candidate in Computational Mathematics
 affiliation: NTNU — Norwegian University of Science and Technology
 tagline: >-
-  I build finite element methods for fluid-deformable surfaces —
-  and try to make PDEs look as good as they behave.
+  I work in numerical analysis and computational science —
+  what interests me most is the geometry and structure of nature
 email: contri.alessandro@icloud.com
 description: >-
   Personal website of Alessandro Contri, PhD candidate in computational
@@ -30,7 +30,7 @@ plugins:
 header_pages:
   - 3_Research.markdown
   - 6_Teaching.markdown
-  - 5_NumAlg.markdown
+  - 5_RabbitHoles.markdown
   - 2_CV.markdown
 
 # Exclude from processing.

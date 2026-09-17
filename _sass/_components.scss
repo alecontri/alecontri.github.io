@@ -266,6 +266,24 @@ a.project-card:hover .project-card__body h3::after {
   position: relative;
   padding: 4.5rem 0 3.5rem;
   overflow: hidden;
+  background-color: var(--bg);
+  background-image: url("/assets/trial.webp");
+  background-size: cover;
+  background-position: center 38%;
+  background-image:
+    // linear-gradient(100deg, var(--bg) 40%, transparent 88%),
+    url("/assets/trial.webp");
+}
+
+// The photo is bright; only darken it under dark mode (multiplying against a
+// light background barely changes anything, so this is safe to scope tightly).
+:root[data-theme="dark"] .hero {
+  background-blend-mode: multiply;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero {
+    background-blend-mode: multiply;
+  }
 }
 
 .hero__mesh {
@@ -469,6 +487,15 @@ a.project-card:hover .project-card__body h3::after {
   box-shadow: var(--shadow);
   background: var(--card);
 }
+.figure audio {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: var(--card);
+  padding: 0.6rem 0.8rem;
+}
 .figure figcaption {
   margin-top: 0.7em;
   font-family: var(--font-mono);
@@ -478,6 +505,23 @@ a.project-card:hover .project-card__body h3::after {
 }
 .figure figcaption code {
   font-size: 0.95em;
+}
+
+// Two figures side by side (e.g. a pair of related photos), stacking on narrow screens.
+.figure-row {
+  display: flex;
+  gap: 1.25rem;
+  margin: 2em 0;
+}
+.figure-row .figure {
+  margin: 0;
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 640px) {
+  .figure-row {
+    flex-direction: column;
+  }
 }
 
 // -- CV embed ---------------------------------------------------------------

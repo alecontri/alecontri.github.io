@@ -1,0 +1,82 @@
+<svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four panels showing a membrane cross-section with a director vector: free in the Cosserat model, fixed-length in the Naghdi model, locked to the normal in the Kirchhoff-Love model, and absent (bending only) in the Canham-Helfrich model">
+<line x1="10" y1="160.0" x2="470" y2="160.0" stroke="#928c7f" stroke-width="1" opacity="0.4"/>
+<line x1="240.0" y1="10" x2="240.0" y2="310" stroke="#928c7f" stroke-width="1" opacity="0.4"/>
+<polyline points="50.00,80.00 52.37,82.23 54.75,84.40 57.12,86.46 59.49,88.35 61.86,90.03 64.24,91.46 66.61,92.59 68.98,93.40 71.36,93.88 73.73,94.00 76.10,93.76 78.47,93.17 80.85,92.25 83.22,91.01 85.59,89.50 87.97,87.74 90.34,85.78 92.71,83.68 95.08,81.49 97.46,79.25 99.83,77.04 102.20,74.90 104.58,72.89 106.95,71.06 109.32,69.46 111.69,68.13 114.07,67.10 116.44,66.40 118.81,66.04 121.19,66.04 123.56,66.40 125.93,67.10 128.31,68.13 130.68,69.46 133.05,71.06 135.42,72.89 137.80,74.90 140.17,77.04 142.54,79.25 144.92,81.49 147.29,83.68 149.66,85.78 152.03,87.74 154.41,89.50 156.78,91.01 159.15,92.25 161.53,93.17 163.90,93.76 166.27,94.00 168.64,93.88 171.02,93.40 173.39,92.59 175.76,91.46 178.14,90.03 180.51,88.35 182.88,86.46 185.25,84.40 187.63,82.23 190.00,80.00" fill="none" stroke="#1c1a17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="68.98" y1="93.40" x2="58.80" y2="73.90" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="58.80" y1="73.90" x2="56.72" y2="78.45" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="58.80" y1="73.90" x2="63.72" y2="74.80" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="68.98" cy="93.40" r="2" fill="#1c1a17"/>
+<line x1="92.71" y1="83.68" x2="72.13" y2="75.91" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="72.13" y1="75.91" x2="73.61" y2="80.68" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="72.13" y1="75.91" x2="76.40" y2="73.30" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="92.71" cy="83.68" r="2" fill="#1c1a17"/>
+<line x1="116.44" y1="66.40" x2="123.43" y2="45.54" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="123.43" y1="45.54" x2="118.71" y2="47.20" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="123.43" y1="45.54" x2="126.20" y2="49.70" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="116.44" cy="66.40" r="2" fill="#1c1a17"/>
+<line x1="140.17" y1="77.04" x2="157.27" y2="63.20" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="157.27" y1="63.20" x2="152.40" y2="62.06" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="157.27" y1="63.20" x2="157.37" y2="68.20" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="140.17" cy="77.04" r="2" fill="#1c1a17"/>
+<line x1="163.90" y1="93.76" x2="152.24" y2="75.10" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="152.24" y1="75.10" x2="150.52" y2="79.79" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="152.24" y1="75.10" x2="157.22" y2="75.61" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="163.90" cy="93.76" r="2" fill="#1c1a17"/>
+<text x="120.0" y="146.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1c1a17">Cosserat: free director</text>
+<polyline points="290.00,80.00 292.37,82.23 294.75,84.40 297.12,86.46 299.49,88.35 301.86,90.03 304.24,91.46 306.61,92.59 308.98,93.40 311.36,93.88 313.73,94.00 316.10,93.76 318.47,93.17 320.85,92.25 323.22,91.01 325.59,89.50 327.97,87.74 330.34,85.78 332.71,83.68 335.08,81.49 337.46,79.25 339.83,77.04 342.20,74.90 344.58,72.89 346.95,71.06 349.32,69.46 351.69,68.13 354.07,67.10 356.44,66.40 358.81,66.04 361.19,66.04 363.56,66.40 365.93,67.10 368.31,68.13 370.68,69.46 373.05,71.06 375.42,72.89 377.80,74.90 380.17,77.04 382.54,79.25 384.92,81.49 387.29,83.68 389.66,85.78 392.03,87.74 394.41,89.50 396.78,91.01 399.15,92.25 401.53,93.17 403.90,93.76 406.27,94.00 408.64,93.88 411.02,93.40 413.39,92.59 415.76,91.46 418.14,90.03 420.51,88.35 422.88,86.46 425.25,84.40 427.63,82.23 430.00,80.00" fill="none" stroke="#1c1a17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="308.98" y1="93.40" x2="307.51" y2="71.45" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="307.51" y1="71.45" x2="303.78" y2="74.78" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="307.51" y1="71.45" x2="311.66" y2="74.25" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="308.98" cy="93.40" r="2" fill="#1c1a17"/>
+<line x1="332.71" y1="83.68" x2="314.86" y2="70.82" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.86" y1="70.82" x2="315.05" y2="75.82" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.86" y1="70.82" x2="319.66" y2="69.41" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="332.71" cy="83.68" r="2" fill="#1c1a17"/>
+<line x1="356.44" y1="66.40" x2="356.92" y2="44.41" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="356.92" y1="44.41" x2="352.91" y2="47.39" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="356.92" y1="44.41" x2="360.80" y2="47.56" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="356.44" cy="66.40" r="2" fill="#1c1a17"/>
+<line x1="380.17" y1="77.04" x2="396.07" y2="61.84" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="396.07" y1="61.84" x2="391.13" y2="61.11" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="396.07" y1="61.84" x2="396.58" y2="66.81" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="380.17" cy="77.04" r="2" fill="#1c1a17"/>
+<line x1="403.90" y1="93.76" x2="400.56" y2="72.01" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="400.56" y1="72.01" x2="397.12" y2="75.65" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="400.56" y1="72.01" x2="404.92" y2="74.45" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="403.90" cy="93.76" r="2" fill="#1c1a17"/>
+<text x="360.0" y="146.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1c1a17">Naghdi: fixed length</text>
+<polyline points="50.00,240.00 52.37,242.23 54.75,244.40 57.12,246.46 59.49,248.35 61.86,250.03 64.24,251.46 66.61,252.59 68.98,253.40 71.36,253.88 73.73,254.00 76.10,253.76 78.47,253.17 80.85,252.25 83.22,251.01 85.59,249.50 87.97,247.74 90.34,245.78 92.71,243.68 95.08,241.49 97.46,239.25 99.83,237.04 102.20,234.90 104.58,232.89 106.95,231.06 109.32,229.46 111.69,228.13 114.07,227.10 116.44,226.40 118.81,226.04 121.19,226.04 123.56,226.40 125.93,227.10 128.31,228.13 130.68,229.46 133.05,231.06 135.42,232.89 137.80,234.90 140.17,237.04 142.54,239.25 144.92,241.49 147.29,243.68 149.66,245.78 152.03,247.74 154.41,249.50 156.78,251.01 159.15,252.25 161.53,253.17 163.90,253.76 166.27,254.00 168.64,253.88 171.02,253.40 173.39,252.59 175.76,251.46 178.14,250.03 180.51,248.35 182.88,246.46 185.25,244.40 187.63,242.23 190.00,240.00" fill="none" stroke="#1c1a17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="68.98" y1="253.40" x2="74.21" y2="234.10" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="74.21" y1="234.10" x2="69.60" y2="236.03" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="74.21" y1="234.10" x2="77.22" y2="238.09" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="68.98" cy="253.40" r="2" fill="#1c1a17"/>
+<line x1="92.71" y1="243.68" x2="79.29" y2="228.86" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="79.29" y1="228.86" x2="78.42" y2="233.78" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="79.29" y1="228.86" x2="84.27" y2="228.48" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="92.71" cy="243.68" r="2" fill="#1c1a17"/>
+<line x1="116.44" y1="226.40" x2="112.09" y2="206.88" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="112.09" y1="206.88" x2="108.91" y2="210.73" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="112.09" y1="206.88" x2="116.61" y2="209.02" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="116.44" cy="226.40" r="2" fill="#1c1a17"/>
+<line x1="140.17" y1="237.04" x2="153.69" y2="222.30" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="153.69" y1="222.30" x2="148.71" y2="221.90" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="153.69" y1="222.30" x2="154.52" y2="227.23" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="140.17" cy="237.04" r="2" fill="#1c1a17"/>
+<line x1="163.90" y1="253.76" x2="167.32" y2="234.05" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="167.32" y1="234.05" x2="162.91" y2="236.40" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<line x1="167.32" y1="234.05" x2="170.69" y2="237.75" stroke="#c8461c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="163.90" cy="253.76" r="2" fill="#1c1a17"/>
+<text x="120.0" y="306.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1c1a17">Kirchhoff–Love: locked to normal</text>
+<polyline points="290.00,240.00 292.37,242.23 294.75,244.40 297.12,246.46 299.49,248.35 301.86,250.03 304.24,251.46 306.61,252.59 308.98,253.40 311.36,253.88 313.73,254.00 316.10,253.76 318.47,253.17 320.85,252.25 323.22,251.01 325.59,249.50 327.97,247.74 330.34,245.78 332.71,243.68 335.08,241.49 337.46,239.25 339.83,237.04 342.20,234.90 344.58,232.89 346.95,231.06 349.32,229.46 351.69,228.13 354.07,227.10 356.44,226.40 358.81,226.04 361.19,226.04 363.56,226.40 365.93,227.10 368.31,228.13 370.68,229.46 373.05,231.06 375.42,232.89 377.80,234.90 380.17,237.04 382.54,239.25 384.92,241.49 387.29,243.68 389.66,245.78 392.03,247.74 394.41,249.50 396.78,251.01 399.15,252.25 401.53,253.17 403.90,253.76 406.27,254.00 408.64,253.88 411.02,253.40 413.39,252.59 415.76,251.46 418.14,250.03 420.51,248.35 422.88,246.46 425.25,244.40 427.63,242.23 430.00,240.00" fill="none" stroke="#1c1a17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="308.98" y1="253.40" x2="311.60" y2="243.75" stroke="#928c7f" stroke-width="2" stroke-linecap="round"/>
+<circle cx="308.98" cy="253.40" r="2" fill="#1c1a17"/>
+<line x1="332.71" y1="243.68" x2="326.00" y2="236.27" stroke="#928c7f" stroke-width="2" stroke-linecap="round"/>
+<circle cx="332.71" cy="243.68" r="2" fill="#1c1a17"/>
+<line x1="356.44" y1="226.40" x2="354.27" y2="216.64" stroke="#928c7f" stroke-width="2" stroke-linecap="round"/>
+<circle cx="356.44" cy="226.40" r="2" fill="#1c1a17"/>
+<line x1="380.17" y1="237.04" x2="386.93" y2="229.67" stroke="#928c7f" stroke-width="2" stroke-linecap="round"/>
+<circle cx="380.17" cy="237.04" r="2" fill="#1c1a17"/>
+<line x1="403.90" y1="253.76" x2="405.61" y2="243.91" stroke="#928c7f" stroke-width="2" stroke-linecap="round"/>
+<circle cx="403.90" cy="253.76" r="2" fill="#1c1a17"/>
+<text x="360.0" y="306.0" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1c1a17">Canham–Helfrich: bending only</text>
+</svg>
