@@ -34,7 +34,7 @@ Cells constantly reshape themselves — crawling, engulfing particles, budding o
 The membrane itself has a bit of a split personality, and it's worth being precise about which half of it this card is about. Laterally, the lipids making it up can slide past each other freely, so *within* the surface the membrane behaves like a two-dimensional fluid. But bending the surface *out of that plane* costs energy — the bilayer resists curvature much more than it resists sliding, the way a sheet of paper folds reluctantly but slides across a table with no resistance at all. On the timescales I care about, that second, elastic side of the story usually dominates the fluid one, and that's what the rest of this card is about: not how the membrane flows, but how it bends.
 
 <figure class="figure">
-  <img src="{{ "/assets/numalg/fluid_deformable.png" | relative_url }}" alt="Schematics of how fluid-deformable membranes behave.">
+  <img src="{{ "/assets/numalg/fluid_deformable.webp" | relative_url }}" alt="Schematics of how fluid-deformable membranes behave.">
   <figcaption>Left: Undeformed initial configuration. Center-Left: Membrane bends out-of-plane but in-plane phospholipid ordering remains unaltered. Center-Right: Membrane flows in-plane leaving the shape of the domain unaltered, but redistributing the position of the phospholipids. Right: Membrane both flows in-plane and bends out-of-plane.</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ Curvature elasticity for a thin sheet doesn't have to start from a membrane at a
 Take one more step and lock the director exactly onto the surface's own normal vector — no independent tilting left at all — and you land on a *Kirchhoff&ndash;Love shell*: three degrees of freedom, with bending now measured purely by how the second fundamental form (the normal's own rate of tipping, from the curvature primer above) changes across the surface. That single constraint quietly turns what was a second-order problem into a fourth-order one in the surface position — the same jump in difficulty that makes Willmore flow harder than mean curvature flow later on, and for exactly the same geometric reason.
 
 <figure class="figure">
-  <img src="{{ "/assets/numalg/ElasticToCanham.png" | relative_url }}" alt="Four panels showing a membrane cross-section with a director vector, progressively constrained from fully free (Cosserat) to fixed length (Naghdi) to locked onto the normal (Kirchhoff-Love) to absent entirely, leaving bending only (Canham-Helfrich)">
+  <img src="{{ "/assets/numalg/ElasticToCanham.webp" | relative_url }}" alt="Four panels showing a membrane cross-section with a director vector, progressively constrained from fully free (Cosserat) to fixed length (Naghdi) to locked onto the normal (Kirchhoff-Love) to absent entirely, leaving bending only (Canham-Helfrich)">
   <figcaption>Each step removes degrees of freedom from the director and the surface deformability, until only the bare surface and its bending are left.</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ The Canham&ndash;Helfrich membrane described next is one further simplification 
 Canham (1970) first modeled the biconcave shape of red blood cells as the shape that *minimizes* a simple energy built purely from mean curvature. Helfrich (1973) generalized it shortly after, arguing from basic physics that — once you neglect in-plane stretching, which the fluid bilayer barely resists anyway — bending really is all that's left; famously, he reasoned his way from "curvature should be negligible in the swelling of vesicles, apart from special cases" to "it seems permissible to entirely neglect tilt and stretching" once a vesicle's volume drops below a critical threshold.
 
 <!-- <figure class="figure">
-  <img src="{{ "/assets/numalg/canham_1.png" | relative_url }}" alt="Schematic of a lipid bilayer as two coupled surfaces roughly 100 angstroms apart, showing how bending the bilayer stretches one surface and compresses the other, and how in-plane forces stretch or shear the surface">
+  <img src="{{ "/assets/numalg/canham_1.webp" | relative_url }}" alt="Schematic of a lipid bilayer as two coupled surfaces roughly 100 angstroms apart, showing how bending the bilayer stretches one surface and compresses the other, and how in-plane forces stretch or shear the surface">
   <figcaption>The bilayer as a thin elastic sheet: bending it apart stretches one face and compresses the other (top), while separately it can be stretched or sheared in-plane (bottom). Adapted from Canham (1970), with permission from Elsevier.</figcaption>
 </figure> -->
 
@@ -85,7 +85,7 @@ where $$\gamma_W$$ is the bending rigidity, $$\bar\kappa$$ is a *spontaneous cur
 This energy is more than a pretty formula — it's genuinely predictive. Seifert, Berndl and Lipowsky (1991) mapped out its full phase diagram of equilibrium vesicle shapes as a function of reduced volume and spontaneous curvature, and found that minimizing $$\mathcal E_H$$ reproduces the entire observed zoo of red blood cell shapes — prolate, oblate, stomatocyte, pear-shaped, budded — as those parameters are dialed. Deuling and Helfrich (1976) confirmed this quantitatively against real, osmotically deflated cells: essentially the whole family of observed axisymmetric shapes falls out of numerically minimizing one energy.
 
 <!-- <figure class="figure">
-  <img src="{{ "/assets/numalg/canham_2.png" | relative_url }}" alt="Photographs of red blood cells at successive stages of osmotic swelling, each paired with the outline predicted by minimizing the Canham-Helfrich energy at the matching reduced volume">
+  <img src="{{ "/assets/numalg/canham_2.webp" | relative_url }}" alt="Photographs of red blood cells at successive stages of osmotic swelling, each paired with the outline predicted by minimizing the Canham-Helfrich energy at the matching reduced volume">
   <figcaption>Real red blood cell shapes (left of each pair) at successive stages of osmotic swelling, next to the outline that minimizing the energy above predicts at the matching volume (right). Adapted from Canham (1970), with permission from Elsevier.</figcaption>
 </figure> -->
 
@@ -212,7 +212,7 @@ with TaskManager():
 ```
 
 <figure class="figure">
-  <video src="{{ "/assets/numalg/mc_sphere.mp4" | relative_url }}" poster="{{ "/assets/numalg/mc_sphere.0000.png" | relative_url }}" autoplay loop muted playsinline></video>
+  <video src="{{ "/assets/numalg/mc_sphere.mp4" | relative_url }}" poster="{{ "/assets/numalg/mc_sphere.0000.webp" | relative_url }}" loop muted playsinline controls preload="none"></video>
   <figcaption>Mean curvature flow of a sphere</figcaption>
 </figure>
 
@@ -227,7 +227,7 @@ Tend = 0.35
 ```
 
 <figure class="figure">
-  <video src="{{ "/assets/numalg/mc_square.mp4" | relative_url }}" poster="{{ "/assets/numalg/mc_square.0000.png" | relative_url }}" autoplay loop muted playsinline></video>
+  <video src="{{ "/assets/numalg/mc_square.mp4" | relative_url }}" poster="{{ "/assets/numalg/mc_square.0000.webp" | relative_url }}" loop muted playsinline controls preload="none"></video>
   <figcaption>Mean curvature flow of a hollow cube</figcaption>
 </figure>
 
@@ -242,14 +242,14 @@ Without going into the details, in the GitHub repository linked at the top of th
 Below is a pure Helfrich flow of a cigar-like shape that evolves under spontaneous curvature.
 
 <figure class="figure">
-  <video src="{{ "/assets/numalg/sigar_51_DuanLi.mp4" | relative_url }}" poster="{{ "/assets/numalg/sigar_51_DuanLi.0000.png" | relative_url }}" autoplay loop muted playsinline></video>
+  <video src="{{ "/assets/numalg/sigar_51_DuanLi.mp4" | relative_url }}" poster="{{ "/assets/numalg/sigar_51_DuanLi.0000.webp" | relative_url }}" loop muted playsinline controls preload="none"></video>
   <figcaption>Cigar-like shape evolving under Helfrich flow with spontaneous curvature −3. The cigar's aspect ratio is 5 to 1, and the colorbar shows the mean curvature.</figcaption>
 </figure>
 
 And here below is a more complex example of a system of reacting species that interact with the deformable membrane of a dendritic spine (a mushroom-like tiny component of a neuron synapse). The mesh in this case is derived directly from imaging of realistic dendritic spines.
 
 <figure class="figure">
-  <video src="{{ "/assets/numalg/fine_tetr_mesh_front.mp4" | relative_url }}" poster="{{ "/assets/numalg/fine_tetr_mesh_front.0000.png" | relative_url }}" autoplay loop muted playsinline></video>
+  <video src="{{ "/assets/numalg/fine_tetr_mesh_front.mp4" | relative_url }}" poster="{{ "/assets/numalg/fine_tetr_mesh_front.0000.webp" | relative_url }}" loop muted playsinline controls preload="none"></video>
   <figcaption>Interaction of a stable, realistic membrane with a system of reacting species. The colorbar shows the concentration of the main species pushing on the membrane.</figcaption>
 </figure>
 

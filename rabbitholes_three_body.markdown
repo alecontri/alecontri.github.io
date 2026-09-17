@@ -202,7 +202,7 @@ simulate(y, forward_euler, 'forward_euler')
 ```
 
 <figure class="figure">
-  <img src="{{ "/assets/numalg/two_body_forward_euler.png" | relative_url }}" alt="Simulation of circular two-body orbit using Forward Euler scheme.">
+  <img src="{{ "/assets/numalg/two_body_forward_euler.webp" | relative_url }}" alt="Simulation of circular two-body orbit using Forward Euler scheme.">
   <figcaption>Simulation of circular orbit using Forward Euler scheme.</figcaption>
 </figure>
 
@@ -229,7 +229,7 @@ simulate(y, backward_euler, 'backward_euler')
 ```
 
 <figure class="figure">
-  <img src="{{ "/assets/numalg/two_body_backward_euler.png" | relative_url }}" alt="Simulation of circular two-body orbit using Backward Euler scheme.">
+  <img src="{{ "/assets/numalg/two_body_backward_euler.webp" | relative_url }}" alt="Simulation of circular two-body orbit using Backward Euler scheme.">
   <figcaption>Simulation of circular orbit using Backward Euler scheme.</figcaption>
 </figure>
 
@@ -375,7 +375,7 @@ def simulate(y, scheme, solvername):
 Here are the results for the Semi-implicit scheme
 
 <!-- <figure class="figure">
-  <img src="{{ "/assets/numalg/three_body_forward_euler.png" | relative_url }}" alt="Simulation of circular three-body orbit using Forward Euler scheme.">
+  <img src="{{ "/assets/numalg/three_body_forward_euler.webp" | relative_url }}" alt="Simulation of circular three-body orbit using Forward Euler scheme.">
   <figcaption>Simulation of circular orbit using Forward Euler scheme.</figcaption>
 </figure>
 <figure class="figure">
@@ -401,7 +401,7 @@ r0 = np.array([r1, r2, r3, r1]).reshape(4, 2)
 ```
 
 <!-- <figure class="figure">
-  <img src="{{ "/assets/numalg/three_body_forward_euler_1.png" | relative_url }}" alt="Simulation of figure eight three-body orbit using Forward Euler scheme.">
+  <img src="{{ "/assets/numalg/three_body_forward_euler_1.webp" | relative_url }}" alt="Simulation of figure eight three-body orbit using Forward Euler scheme.">
   <figcaption>Simulation of figure eight orbit using Forward Euler scheme.</figcaption>
 </figure>
 <figure class="figure">
@@ -567,7 +567,7 @@ Rather than drifting away, the body slowly loops around $$L_4$$ in a "tadpole" o
   <figcaption>CR3BP simulation of motion around L4 Semi-implicit Euler scheme.</figcaption>
 </figure>
 <figure class="figure">
-  <img src="{{ "/assets/numalg/CJ.png" | relative_url }}" alt="Evolution of the Jacobi integral with different schemes.">
+  <img src="{{ "/assets/numalg/CJ.webp" | relative_url }}" alt="Evolution of the Jacobi integral with different schemes.">
   <figcaption>Evolution of the Jacobi integral with different schemes.</figcaption>
 </figure>
 

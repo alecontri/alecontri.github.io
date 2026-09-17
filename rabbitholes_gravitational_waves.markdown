@@ -219,7 +219,7 @@ fig.savefig(f"binary_chirp_{EVENT}.png", dpi=150)
 ```
 
 <figure class="figure">
-  <img src="{{ "/assets/numalg/binary_chirp_GW150914.png" | relative_url }}" alt="Analytical frequency evolution for the gravitational wave GW150914.">
+  <img src="{{ "/assets/numalg/binary_chirp_GW150914.webp" | relative_url }}" alt="Analytical frequency evolution for the gravitational wave GW150914.">
   <figcaption>Analytical frequency evolution for the gravitational wave GW150914.</figcaption>
 </figure>
 
@@ -259,7 +259,7 @@ fig.savefig(f"binary_trajectory_{EVENT}.png", dpi=150)
 ```
 
 <figure class="figure">
-  <img src="{{ "/assets/numalg/binary_trajectory_GW150914.png" | relative_url }}" alt="Analytical trajectory evolution for the gravitational wave GW150914.">
+  <img src="{{ "/assets/numalg/binary_trajectory_GW150914.webp" | relative_url }}" alt="Analytical trajectory evolution for the gravitational wave GW150914.">
   <figcaption>Analytical trajectory evolution for the gravitational wave GW150914.</figcaption>
 </figure>
 
@@ -452,7 +452,7 @@ plt.show()
 ```
 
 <figure class="figure">
-  <video src="{{ "/assets/numalg/gr_wave.mp4" | relative_url }}" poster="{{ "/assets/numalg/gr_wave.0320.png" | relative_url }}" autoplay loop muted playsinline></video>
+  <video src="{{ "/assets/numalg/gr_wave.mp4" | relative_url }}" poster="{{ "/assets/numalg/gr_wave.0320.webp" | relative_url }}" autoplay loop muted playsinline></video>
   <figcaption>Wave equation with rotating quadrupole forcing, as a proxy for gravitational wave visualization</figcaption>
 </figure>
 
