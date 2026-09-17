@@ -127,7 +127,7 @@ $$
 \frac{\mathrm{d}\b{X}}{\mathrm{d}t}=\Delta_\Gamma\,\b{Id}
 $$
 
-In what follows we propose an NgSolve script to simulate the mean curvature flow of a cube.
+In what follows we propose an NgSolve script to simulate the mean curvature flow of a sphere.
 
 ```python
 from ngsolve import *
