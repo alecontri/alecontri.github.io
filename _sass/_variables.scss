@@ -16,6 +16,8 @@
   --accent-soft: rgba(200, 70, 28, 0.12);
   --teal: #1f7a6c;
   --shadow: 0 1px 2px rgba(28, 26, 23, 0.04), 0 8px 24px -12px rgba(28, 26, 23, 0.18);
+  --hero-panel-bg: rgba(250, 246, 238, 0.8);
+  --hero-panel-line: rgba(28, 26, 23, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +34,8 @@
     --accent-soft: rgba(255, 138, 91, 0.16);
     --teal: #5fc3b3;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.6);
+    --hero-panel-bg: rgba(21, 19, 15, 0.74);
+    --hero-panel-line: rgba(243, 237, 224, 0.12);
   }
 }
 
@@ -48,6 +52,8 @@
   --accent-soft: rgba(255, 138, 91, 0.16);
   --teal: #5fc3b3;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.6);
+  --hero-panel-bg: rgba(21, 19, 15, 0.74);
+  --hero-panel-line: rgba(243, 237, 224, 0.12);
 }
 
 :root {

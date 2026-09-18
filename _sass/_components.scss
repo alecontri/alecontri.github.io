@@ -267,12 +267,9 @@ a.project-card:hover .project-card__body h3::after {
   padding: 4.5rem 0 3.5rem;
   overflow: hidden;
   background-color: var(--bg);
-  background-image: url("/assets/trial.webp");
+  background-image: url("/assets/background1.webp");
   background-size: cover;
   background-position: center 38%;
-  background-image:
-    // linear-gradient(100deg, var(--bg) 40%, transparent 88%),
-    url("/assets/trial.webp");
 }
 
 // The photo is bright; only darken it under dark mode (multiplying against a
@@ -333,6 +330,17 @@ a.project-card:hover .project-card__body h3::after {
 
 .hero__text {
   flex: 1 1 28rem;
+  position: relative;
+  z-index: 2;
+  padding: 2.1rem 2.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--hero-panel-line);
+  box-shadow: var(--shadow);
+  background-image:
+    linear-gradient(var(--hero-panel-bg), var(--hero-panel-bg)),
+    url("/assets/background2.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__portrait {
@@ -372,6 +380,9 @@ a.project-card:hover .project-card__body h3::after {
   }
   .hero__actions {
     justify-content: center;
+  }
+  .hero__text {
+    padding: 1.6rem 1.5rem;
   }
   .hero__portrait {
     width: 9rem;
