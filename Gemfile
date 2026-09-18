@@ -16,6 +16,17 @@ gem "jekyll", "~> 4.3.3"
 # to avoid CVE-2024-7254 (stack-overflow DoS parsing crafted protobuf messages).
 gem "google-protobuf", ">= 3.25.5", "< 4.0"
 
+# Needed at install time whenever google-protobuf has to build its native
+# extension from source (e.g. no precompiled binary for the local Ruby yet).
+gem "rake"
+
+# These used to ship in Ruby's standard library by default; recent Ruby
+# versions (3.4+) split them out, but Jekyll and its dependencies still
+# require them.
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.8"
