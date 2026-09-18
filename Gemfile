@@ -12,6 +12,10 @@ gem "jekyll", "~> 4.3.3"
 # This site uses a fully custom theme (see _layouts, _includes, _sass) rather
 # than a packaged Jekyll theme, so no `theme:` gem is required here.
 
+# Pinned above what jekyll-sass-converter's sass-embedded would otherwise pull in,
+# to avoid CVE-2024-7254 (stack-overflow DoS parsing crafted protobuf messages).
+gem "google-protobuf", ">= 3.25.5", "< 4.0"
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.8"
